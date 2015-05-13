@@ -109,6 +109,23 @@
                                             <segue destination="GBI-Nu-FI1" kind="show" id="Imd-8R-v5I"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="AWF-uL-2za" style="IBUITableViewCellStyleDefault" id="XkI-V4-SPX">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XkI-V4-SPX" id="p8t-wx-GfY">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Multi Line Charts Sample" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AWF-uL-2za">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="TTA-sC-JBj" kind="show" id="DFA-Ic-g7F"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -121,7 +138,67 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="COq-xK-Cjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="960" y="98"/>
+            <point key="canvasLocation" x="968" y="147"/>
+        </scene>
+        <!--Multi Line Chart View Controller-->
+        <scene sceneID="4gh-Ae-ki6">
+            <objects>
+                <viewController id="TTA-sC-JBj" customClass="MultiLineChartViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Ms-6Y-gAb"/>
+                        <viewControllerLayoutGuide type="bottom" id="M8l-S0-bm5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hdW-v2-eTY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJm-VN-zJC" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ouR-61-Nvz" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="150" width="600" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vX-ZL-C5K" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="300" width="600" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gex-G1-4a9" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="450" width="600" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8vX-ZL-C5K" firstAttribute="leading" secondItem="hdW-v2-eTY" secondAttribute="leading" id="9fH-j2-e39"/>
+                            <constraint firstItem="M8l-S0-bm5" firstAttribute="top" secondItem="gex-G1-4a9" secondAttribute="bottom" id="9lT-4L-wmk"/>
+                            <constraint firstItem="8vX-ZL-C5K" firstAttribute="top" secondItem="ouR-61-Nvz" secondAttribute="bottom" id="AOF-dm-y3U"/>
+                            <constraint firstItem="gex-G1-4a9" firstAttribute="height" secondItem="ouR-61-Nvz" secondAttribute="height" id="DS4-g3-jSI"/>
+                            <constraint firstItem="gex-G1-4a9" firstAttribute="height" secondItem="pJm-VN-zJC" secondAttribute="height" id="LOS-tC-RZy"/>
+                            <constraint firstItem="pJm-VN-zJC" firstAttribute="top" secondItem="hdW-v2-eTY" secondAttribute="top" id="TB6-vL-1nX"/>
+                            <constraint firstAttribute="trailing" secondItem="ouR-61-Nvz" secondAttribute="trailing" id="VA4-qy-pr4"/>
+                            <constraint firstAttribute="trailing" secondItem="pJm-VN-zJC" secondAttribute="trailing" id="VRd-4n-4LO"/>
+                            <constraint firstItem="pJm-VN-zJC" firstAttribute="leading" secondItem="hdW-v2-eTY" secondAttribute="leading" id="lMW-GR-PZw"/>
+                            <constraint firstItem="ouR-61-Nvz" firstAttribute="top" secondItem="pJm-VN-zJC" secondAttribute="bottom" id="qsA-1l-Mmk"/>
+                            <constraint firstItem="ouR-61-Nvz" firstAttribute="leading" secondItem="hdW-v2-eTY" secondAttribute="leading" id="sga-hf-QDz"/>
+                            <constraint firstItem="gex-G1-4a9" firstAttribute="leading" secondItem="hdW-v2-eTY" secondAttribute="leading" id="uly-kB-mKr"/>
+                            <constraint firstItem="gex-G1-4a9" firstAttribute="height" secondItem="8vX-ZL-C5K" secondAttribute="height" id="v2Z-xx-quE"/>
+                            <constraint firstAttribute="trailing" secondItem="gex-G1-4a9" secondAttribute="trailing" id="vgR-t7-FVb"/>
+                            <constraint firstItem="gex-G1-4a9" firstAttribute="top" secondItem="8vX-ZL-C5K" secondAttribute="bottom" id="wxb-5V-bh9"/>
+                            <constraint firstAttribute="trailing" secondItem="8vX-ZL-C5K" secondAttribute="trailing" id="yKe-Sa-4S2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="chartViews" destination="pJm-VN-zJC" id="4dK-YI-4x2"/>
+                        <outletCollection property="chartViews" destination="ouR-61-Nvz" id="Ltg-Lk-yw1"/>
+                        <outletCollection property="chartViews" destination="8vX-ZL-C5K" id="QPA-Il-qAN"/>
+                        <outletCollection property="chartViews" destination="gex-G1-4a9" id="FA8-I0-XM2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NJh-J3-wqZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3459" y="2856"/>
         </scene>
         <!--Ine Chart View Controller-->
         <scene sceneID="tzD-Z1-mB8">
@@ -205,7 +282,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIp-aq-Tzu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1016" y="875"/>
+            <point key="canvasLocation" x="3488" y="2139"/>
         </scene>
         <!--Day Two Table View Controller-->
         <scene sceneID="P9A-lx-0sV">
@@ -252,7 +329,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DdG-Xo-NRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1716" y="793"/>
+            <point key="canvasLocation" x="3444" y="-1551"/>
         </scene>
         <!--Day One Table View Controller-->
         <scene sceneID="gnl-aK-AvI">
@@ -319,25 +396,28 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2v-cT-zPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1716" y="98"/>
+            <point key="canvasLocation" x="3444" y="-2246"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="s3C-HT-3el">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sMk-n2-Ump" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="sMk-n2-Ump" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0X4-N3-tRa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="9S7-zA-9z7">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="Cna-z7-Yk0" kind="relationship" relationship="rootViewController" id="MIm-2Q-hPD"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P5V-an-iuK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="148" y="98"/>
+            <point key="canvasLocation" x="-592" y="147"/>
         </scene>
         <!--Calendar View Controller-->
         <scene sceneID="tBL-Wl-FGZ">
@@ -367,11 +447,12 @@
                     <navigationItem key="navigationItem" id="58i-Rn-VCk"/>
                     <connections>
                         <outlet property="datePicker" destination="rNY-Xv-cil" id="yLa-TS-gIK"/>
+                        <segue destination="fBE-fy-5p7" kind="show" identifier="SegueCalendarToWorkouts" id="lzh-NG-bS2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOl-XA-UhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="148" y="826"/>
+            <point key="canvasLocation" x="254" y="147"/>
         </scene>
     </scenes>
 </document>

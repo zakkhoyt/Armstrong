@@ -320,6 +320,7 @@
 
 - (UIColor *)selectedTodayImageColor
 {
+    // Today, blue
     return [UIColor colorWithRed:0/255.0f green:121/255.0f blue:255/255.0f alpha:1.0f];
 }
 
@@ -351,6 +352,7 @@
 
 - (UIColor *)selectedDayImageColor
 {
+    // Red
     return [UIColor colorWithRed:255/255.0f green:59/255.0f blue:48/255.0f alpha:1.0f];
 }
 

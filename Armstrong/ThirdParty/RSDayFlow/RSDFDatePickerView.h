@@ -33,6 +33,7 @@
 */
 @interface RSDFDatePickerView : UIView
 
+@property (nonatomic) BOOL allowsMultipleSelection;
 /**
  Designated initializer. Initializes and returns a newly allocated view object with the specified frame rectangle and the specified calendar.
  

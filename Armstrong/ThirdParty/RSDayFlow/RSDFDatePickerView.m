@@ -186,6 +186,7 @@ static NSString * const RSDFDatePickerViewDayCellIdentifier = @"RSDFDatePickerVi
         [_collectionView registerClass:[self dayCellClass] forCellWithReuseIdentifier:RSDFDatePickerViewDayCellIdentifier];
         [_collectionView reloadData];
         [_collectionView layoutIfNeeded];
+        _collectionView.allowsMultipleSelection = YES;
     }
     return _collectionView;
 }
@@ -299,7 +300,9 @@ static NSString * const RSDFDatePickerViewDayCellIdentifier = @"RSDFDatePickerVi
             [self.selectedDate compare:[self dateFromPickerDate:self.fromDate]] != NSOrderedAscending &&
             [self.selectedDate compare:[self dateFromPickerDate:self.toDate]] != NSOrderedDescending) {
             NSIndexPath *previousSelectedCellIndexPath = [self indexPathForDate:self.selectedDate];
-            [self.collectionView deselectItemAtIndexPath:previousSelectedCellIndexPath animated:NO];
+            if(self.allowsMultipleSelection == NO){
+                [self.collectionView deselectItemAtIndexPath:previousSelectedCellIndexPath animated:NO];
+            }
             UICollectionViewCell *previousSelectedCell = [self.collectionView cellForItemAtIndexPath:previousSelectedCellIndexPath];
             if (previousSelectedCell) {
                 [previousSelectedCell setNeedsDisplay];

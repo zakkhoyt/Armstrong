@@ -32,6 +32,7 @@
 		CF8F8AE31B03000A00F5D376 /* LIneChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8AE21B03000A00F5D376 /* LIneChartViewController.m */; };
 		CF8F8AF11B0304A600F5D376 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF8F8AD91B02E7E300F5D376 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CF8F8AF41B0305A600F5D376 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8AF31B0305A600F5D376 /* CalendarViewController.m */; };
+		CF8F8AF91B0314DE00F5D376 /* MultiLineChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8AF81B0314DE00F5D376 /* MultiLineChartViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,8 @@
 		CF8F8AE21B03000A00F5D376 /* LIneChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIneChartViewController.m; sourceTree = "<group>"; };
 		CF8F8AF21B0305A600F5D376 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
 		CF8F8AF31B0305A600F5D376 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		CF8F8AF71B0314DE00F5D376 /* MultiLineChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiLineChartViewController.h; sourceTree = "<group>"; };
+		CF8F8AF81B0314DE00F5D376 /* MultiLineChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiLineChartViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,10 +274,11 @@
 		CF8F8AE91B03019700F5D376 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
-				CF8F8ADE1B02FF9800F5D376 /* ChartViewController.h */,
-				CF8F8ADF1B02FF9800F5D376 /* ChartViewController.m */,
+				CF8F8AF61B03139400F5D376 /* Base */,
 				CF8F8AE11B03000A00F5D376 /* LIneChartViewController.h */,
 				CF8F8AE21B03000A00F5D376 /* LIneChartViewController.m */,
+				CF8F8AF71B0314DE00F5D376 /* MultiLineChartViewController.h */,
+				CF8F8AF81B0314DE00F5D376 /* MultiLineChartViewController.m */,
 			);
 			name = Charts;
 			sourceTree = "<group>";
@@ -297,6 +301,15 @@
 				CF8F8AF31B0305A600F5D376 /* CalendarViewController.m */,
 			);
 			name = Calendar;
+			sourceTree = "<group>";
+		};
+		CF8F8AF61B03139400F5D376 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CF8F8ADE1B02FF9800F5D376 /* ChartViewController.h */,
+				CF8F8ADF1B02FF9800F5D376 /* ChartViewController.m */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,6 +436,7 @@
 				CF8F8AC91B02E7A200F5D376 /* RSDFDatePickerCollectionView.m in Sources */,
 				CF8F8A041B02DD5C00F5D376 /* DayTwoTableViewController.m in Sources */,
 				CF8F89D51B02D7E200F5D376 /* AppDelegate.m in Sources */,
+				CF8F8AF91B0314DE00F5D376 /* MultiLineChartViewController.m in Sources */,
 				CF8F8AE31B03000A00F5D376 /* LIneChartViewController.m in Sources */,
 				CF8F8ACB1B02E7A200F5D376 /* RSDFDatePickerDayCell.m in Sources */,
 				CF8F8A101B02E1A200F5D376 /* ArmstrongDayWorkoutOne.m in Sources */,
