@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface DayOneTableViewCell : UITableViewCell
-
+@property (nonatomic, strong) NSIndexPath *indexPath;
 @end

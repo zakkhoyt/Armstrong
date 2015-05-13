@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		CF8F89D21B02D7E200F5D376 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F89D11B02D7E200F5D376 /* main.m */; };
 		CF8F89D51B02D7E200F5D376 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F89D41B02D7E200F5D376 /* AppDelegate.m */; };
-		CF8F89D81B02D7E200F5D376 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F89D71B02D7E200F5D376 /* MasterViewController.m */; };
-		CF8F89DB1B02D7E200F5D376 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F89DA1B02D7E200F5D376 /* DetailViewController.m */; };
 		CF8F89DE1B02D7E200F5D376 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8F89DC1B02D7E200F5D376 /* Main.storyboard */; };
 		CF8F89E01B02D7E200F5D376 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8F89DF1B02D7E200F5D376 /* Images.xcassets */; };
 		CF8F89E31B02D7E200F5D376 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF8F89E11B02D7E200F5D376 /* LaunchScreen.xib */; };
 		CF8F89EF1B02D7E200F5D376 /* ArmstrongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F89EE1B02D7E200F5D376 /* ArmstrongTests.m */; };
+		CF8F89FA1B02D8B900F5D376 /* DaysTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F89F91B02D8B900F5D376 /* DaysTableViewController.m */; };
+		CF8F89FD1B02D9BA00F5D376 /* DayOneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F89FC1B02D9BA00F5D376 /* DayOneTableViewController.m */; };
+		CF8F8A001B02D9D400F5D376 /* DayOneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F89FF1B02D9D400F5D376 /* DayOneTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +34,18 @@
 		CF8F89D11B02D7E200F5D376 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF8F89D31B02D7E200F5D376 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CF8F89D41B02D7E200F5D376 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CF8F89D61B02D7E200F5D376 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		CF8F89D71B02D7E200F5D376 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		CF8F89D91B02D7E200F5D376 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		CF8F89DA1B02D7E200F5D376 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		CF8F89DD1B02D7E200F5D376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF8F89DF1B02D7E200F5D376 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CF8F89E21B02D7E200F5D376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CF8F89E81B02D7E200F5D376 /* ArmstrongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArmstrongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8F89ED1B02D7E200F5D376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF8F89EE1B02D7E200F5D376 /* ArmstrongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArmstrongTests.m; sourceTree = "<group>"; };
+		CF8F89F81B02D8B900F5D376 /* DaysTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaysTableViewController.h; sourceTree = "<group>"; };
+		CF8F89F91B02D8B900F5D376 /* DaysTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaysTableViewController.m; sourceTree = "<group>"; };
+		CF8F89FB1B02D9BA00F5D376 /* DayOneTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayOneTableViewController.h; sourceTree = "<group>"; };
+		CF8F89FC1B02D9BA00F5D376 /* DayOneTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayOneTableViewController.m; sourceTree = "<group>"; };
+		CF8F89FE1B02D9D400F5D376 /* DayOneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayOneTableViewCell.h; sourceTree = "<group>"; };
+		CF8F89FF1B02D9D400F5D376 /* DayOneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayOneTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,14 +89,13 @@
 			children = (
 				CF8F89D31B02D7E200F5D376 /* AppDelegate.h */,
 				CF8F89D41B02D7E200F5D376 /* AppDelegate.m */,
-				CF8F89D61B02D7E200F5D376 /* MasterViewController.h */,
-				CF8F89D71B02D7E200F5D376 /* MasterViewController.m */,
-				CF8F89D91B02D7E200F5D376 /* DetailViewController.h */,
-				CF8F89DA1B02D7E200F5D376 /* DetailViewController.m */,
 				CF8F89DC1B02D7E200F5D376 /* Main.storyboard */,
 				CF8F89DF1B02D7E200F5D376 /* Images.xcassets */,
 				CF8F89E11B02D7E200F5D376 /* LaunchScreen.xib */,
 				CF8F89CF1B02D7E200F5D376 /* Supporting Files */,
+				CF8F89F81B02D8B900F5D376 /* DaysTableViewController.h */,
+				CF8F89F91B02D8B900F5D376 /* DaysTableViewController.m */,
+				CF8F8A011B02D9D800F5D376 /* Day One */,
 			);
 			path = Armstrong;
 			sourceTree = "<group>";
@@ -122,6 +124,17 @@
 				CF8F89ED1B02D7E200F5D376 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF8F8A011B02D9D800F5D376 /* Day One */ = {
+			isa = PBXGroup;
+			children = (
+				CF8F89FB1B02D9BA00F5D376 /* DayOneTableViewController.h */,
+				CF8F89FC1B02D9BA00F5D376 /* DayOneTableViewController.m */,
+				CF8F89FE1B02D9D400F5D376 /* DayOneTableViewCell.h */,
+				CF8F89FF1B02D9D400F5D376 /* DayOneTableViewCell.m */,
+			);
+			name = "Day One";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,10 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8F8A001B02D9D400F5D376 /* DayOneTableViewCell.m in Sources */,
 				CF8F89D51B02D7E200F5D376 /* AppDelegate.m in Sources */,
-				CF8F89D81B02D7E200F5D376 /* MasterViewController.m in Sources */,
+				CF8F89FD1B02D9BA00F5D376 /* DayOneTableViewController.m in Sources */,
+				CF8F89FA1B02D8B900F5D376 /* DaysTableViewController.m in Sources */,
 				CF8F89D21B02D7E200F5D376 /* main.m in Sources */,
-				CF8F89DB1B02D7E200F5D376 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
