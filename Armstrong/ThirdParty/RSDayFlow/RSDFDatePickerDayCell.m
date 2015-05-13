@@ -35,6 +35,10 @@
 @property (nonatomic, readonly, strong) UIImageView *markImageView;
 @property (nonatomic, readonly, strong) UIImageView *dividerImageView;
 
+@property (nonatomic, strong) RSDFDatePickerDayCellEmptyBlock tapBlock;
+@property (nonatomic, strong) RSDFDatePickerDayCellEmptyBlock doubleTapBlock;
+@property (nonatomic, strong) RSDFDatePickerDayCellEmptyBlock longPressBlock;
+
 @end
 
 @implementation RSDFDatePickerDayCell
@@ -74,9 +78,51 @@
     [self addSubview:self.markImageView];
     [self addSubview:self.dividerImageView];
     [self addSubview:self.dateLabel];
+
+
+//    UITapGestureRecognizer *doubleTapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(doubleTap:)];
+//    doubleTapGesture.numberOfTapsRequired = 2;
+//    [self addGestureRecognizer:doubleTapGesture];
+//
+//    
+//    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(singleTap:)];
+//    tapGesture.numberOfTapsRequired = 1;
+//    [tapGesture requireGestureRecognizerToFail:doubleTapGesture];
+//    [self addGestureRecognizer:tapGesture];
+
+    UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPress:)];
+    [self addGestureRecognizer:longPressGesture];
     
     [self updateSubviews];
 }
+
+-(void)setTapBlock:(RSDFDatePickerDayCellEmptyBlock)tapBlock{
+    _tapBlock = tapBlock;
+}
+-(void)setDoubleTapBlock:(RSDFDatePickerDayCellEmptyBlock)doubleTapBlock{
+    _doubleTapBlock = doubleTapBlock;
+}
+-(void)setLongPressBlock:(RSDFDatePickerDayCellEmptyBlock)longPressBlock{
+    _longPressBlock = longPressBlock;
+}
+
+
+-(void)singleTap:(UITapGestureRecognizer*)sender{
+    if(_tapBlock){
+        _tapBlock();
+    }
+}
+-(void)doubleTap:(UITapGestureRecognizer*)sender{
+    if(_doubleTapBlock){
+        _doubleTapBlock();
+    }
+}
+-(void)longPress:(UILongPressGestureRecognizer*)sender{
+    if(_longPressBlock){
+        _longPressBlock();
+    }
+}
+
 
 - (void)layoutSubviews
 {

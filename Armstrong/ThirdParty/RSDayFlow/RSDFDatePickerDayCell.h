@@ -26,10 +26,15 @@
 #import <UIKit/UIKit.h>
 #import "RSDayFlow.h"
 
+typedef void (^RSDFDatePickerDayCellEmptyBlock)();
 /**
  The `RSDFDatePickerDayCell` is a cell which used to display a day in the date picker view.
  */
 @interface RSDFDatePickerDayCell : UICollectionViewCell
+
+-(void)setTapBlock:(RSDFDatePickerDayCellEmptyBlock)tapBlock;
+-(void)setDoubleTapBlock:(RSDFDatePickerDayCellEmptyBlock)doubleTapBlock;
+-(void)setLongPressBlock:(RSDFDatePickerDayCellEmptyBlock)longPressBlock;
 
 ///-------------------------
 /// @name Accessing Subviews

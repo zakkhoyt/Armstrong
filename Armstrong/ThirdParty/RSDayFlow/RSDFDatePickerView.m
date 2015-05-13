@@ -620,6 +620,45 @@ static NSString * const RSDFDatePickerViewDayCellIdentifier = @"RSDFDatePickerVi
 {
     RSDFDatePickerDayCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:RSDFDatePickerViewDayCellIdentifier forIndexPath:indexPath];
     
+//    [cell setTapBlock:^{
+//        NSLog(@"Single tap");
+//        RSDFDatePickerDayCell *cell = ((RSDFDatePickerDayCell *)[collectionView cellForItemAtIndexPath:indexPath]);
+//        NSDate *date = cell ? [self dateFromPickerDate:cell.date] : nil;
+//        
+//        [self selectDate:date];
+//        
+//        if ([self.delegate respondsToSelector:@selector(datePickerView:didSingleTapDate:)]) {
+//            [self.delegate datePickerView:self didSingleTapDate:date];
+//        }
+//
+//    }];
+//    
+//    [cell setDoubleTapBlock:^{
+//        NSLog(@"Double tap");
+//        RSDFDatePickerDayCell *cell = ((RSDFDatePickerDayCell *)[collectionView cellForItemAtIndexPath:indexPath]);
+//        NSDate *date = cell ? [self dateFromPickerDate:cell.date] : nil;
+//        
+//        [self selectDate:date];
+//        
+//        if ([self.delegate respondsToSelector:@selector(datePickerView:didDoubleTapDate:)]) {
+//            [self.delegate datePickerView:self didDoubleTapDate:date];
+//        }
+//
+//    }];
+    
+    [cell setLongPressBlock:^{
+        NSLog(@"Long press");
+        RSDFDatePickerDayCell *cell = ((RSDFDatePickerDayCell *)[collectionView cellForItemAtIndexPath:indexPath]);
+        NSDate *date = cell ? [self dateFromPickerDate:cell.date] : nil;
+        
+        [self selectDate:date];
+        
+        if ([self.delegate respondsToSelector:@selector(datePickerView:didLongPressDate:)]) {
+            [self.delegate datePickerView:self didLongPressDate:date];
+        }
+
+    }];
+    
     NSDate *firstDayInMonth = [self dateForFirstDayInSection:indexPath.section];
     RSDFDatePickerDate firstDayPickerDate = [self pickerDateFromDate:firstDayInMonth];
     NSUInteger weekday = [self reorderedWeekday:[self.calendar components:NSCalendarUnitWeekday fromDate:firstDayInMonth].weekday];

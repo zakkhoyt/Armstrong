@@ -202,6 +202,9 @@
  @param date The selected date.
  */
 - (void)datePickerView:(RSDFDatePickerView *)view didSelectDate:(NSDate *)date;
+- (void)datePickerView:(RSDFDatePickerView *)view didSingleTapDate:(NSDate *)date;
+- (void)datePickerView:(RSDFDatePickerView *)view didDoubleTapDate:(NSDate *)date;
+- (void)datePickerView:(RSDFDatePickerView *)view didLongPressDate:(NSDate *)date;
 
 @end
 
