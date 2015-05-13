@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Zakk Hoyt. All rights reserved.
 //
 
-#import "DaysTableViewController.h"
+#import "WorkoutSelectTableViewController.h"
 
-@interface DaysTableViewController ()
+@interface WorkoutSelectTableViewController ()
 
 @end
 
-@implementation DaysTableViewController
+@implementation WorkoutSelectTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

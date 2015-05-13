@@ -1,5 +1,5 @@
 //
-//  DayTwoTableViewCell.h
+//  DaysTableViewController.h
 //  Armstrong
 //
 //  Created by Zakk Hoyt on 5/12/15.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DayTwoTableViewCell : UITableViewCell
-@property (nonatomic, strong) NSIndexPath *indexPath;
+
+@interface WorkoutSelectTableViewController : UITableViewController
+
 @end

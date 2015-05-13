@@ -118,8 +118,10 @@
     }
 }
 -(void)longPress:(UILongPressGestureRecognizer*)sender{
-    if(_longPressBlock){
-        _longPressBlock();
+    if(sender.state == UIGestureRecognizerStateBegan){
+        if(_longPressBlock){
+            _longPressBlock();
+        }
     }
 }
 

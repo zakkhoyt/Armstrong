@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>21A52A86-451E-4010-9DAB-67CF4D077CF2</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Armstrong</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C45CC92B1920B5E35FA0C12E6E2940CE2793F9A8</key>
 		<string>github.com:zakkhoyt/Armstrong.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Armstrong.xcodeproj/project.xcworkspace</string>
+	<string>Armstrong.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C45CC92B1920B5E35FA0C12E6E2940CE2793F9A8</key>

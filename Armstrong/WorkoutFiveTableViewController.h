@@ -1,5 +1,5 @@
 //
-//  DayOneTableViewController.h
+//  DayFiveTableViewController.h
 //  Armstrong
 //
 //  Created by Zakk Hoyt on 5/12/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DayOneTableViewController : UITableViewController
+@interface WorkoutFiveTableViewController : UITableViewController
 
 @end

@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Zakk Hoyt. All rights reserved.
 //
 
-#import "DayTwoTableViewCell.h"
+#import "WorkoutTwoTableViewCell.h"
 
-@interface DayTwoTableViewCell ()
+@interface WorkoutTwoTableViewCell ()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @end
 
-@implementation DayTwoTableViewCell
+@implementation WorkoutTwoTableViewCell
 
 -(void)setIndexPath:(NSIndexPath *)indexPath{
     _indexPath = indexPath;
