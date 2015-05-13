@@ -16,6 +16,22 @@
 		CF8F89FA1B02D8B900F5D376 /* DaysTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F89F91B02D8B900F5D376 /* DaysTableViewController.m */; };
 		CF8F89FD1B02D9BA00F5D376 /* DayOneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F89FC1B02D9BA00F5D376 /* DayOneTableViewController.m */; };
 		CF8F8A001B02D9D400F5D376 /* DayOneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F89FF1B02D9D400F5D376 /* DayOneTableViewCell.m */; };
+		CF8F8A041B02DD5C00F5D376 /* DayTwoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8A031B02DD5C00F5D376 /* DayTwoTableViewController.m */; };
+		CF8F8A081B02DD7100F5D376 /* DayTwoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8A071B02DD7100F5D376 /* DayTwoTableViewCell.m */; };
+		CF8F8A0A1B02E0BF00F5D376 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF8F8A091B02E0BF00F5D376 /* README.txt */; };
+		CF8F8A0D1B02E0DA00F5D376 /* ArmstrongDay.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8A0C1B02E0DA00F5D376 /* ArmstrongDay.m */; };
+		CF8F8A101B02E1A200F5D376 /* ArmstrongDayWorkoutOne.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8A0F1B02E1A200F5D376 /* ArmstrongDayWorkoutOne.m */; };
+		CF8F8AC81B02E7A200F5D376 /* NSCalendar+RSDFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8A6E1B02E7A200F5D376 /* NSCalendar+RSDFAdditions.m */; };
+		CF8F8AC91B02E7A200F5D376 /* RSDFDatePickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8A711B02E7A200F5D376 /* RSDFDatePickerCollectionView.m */; };
+		CF8F8ACA1B02E7A200F5D376 /* RSDFDatePickerCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8A731B02E7A200F5D376 /* RSDFDatePickerCollectionViewLayout.m */; };
+		CF8F8ACB1B02E7A200F5D376 /* RSDFDatePickerDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8A751B02E7A200F5D376 /* RSDFDatePickerDayCell.m */; };
+		CF8F8ACC1B02E7A200F5D376 /* RSDFDatePickerDaysOfWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8A771B02E7A200F5D376 /* RSDFDatePickerDaysOfWeekView.m */; };
+		CF8F8ACD1B02E7A200F5D376 /* RSDFDatePickerMonthHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8A791B02E7A200F5D376 /* RSDFDatePickerMonthHeader.m */; };
+		CF8F8ACE1B02E7A200F5D376 /* RSDFDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8A7B1B02E7A200F5D376 /* RSDFDatePickerView.m */; };
+		CF8F8AE01B02FF9800F5D376 /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8ADF1B02FF9800F5D376 /* ChartViewController.m */; };
+		CF8F8AE31B03000A00F5D376 /* LIneChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8AE21B03000A00F5D376 /* LIneChartViewController.m */; };
+		CF8F8AF11B0304A600F5D376 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF8F8AD91B02E7E300F5D376 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF8F8AF41B0305A600F5D376 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8AF31B0305A600F5D376 /* CalendarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +42,35 @@
 			remoteGlobalIDString = CF8F89CB1B02D7E200F5D376;
 			remoteInfo = Armstrong;
 		};
+		CF8F8AD81B02E7E300F5D376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF8F8AD41B02E7E300F5D376 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
+		CF8F8AEF1B03048A00F5D376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF8F8AD41B02E7E300F5D376 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF8F8AE81B03014E00F5D376 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CF8F8AF11B0304A600F5D376 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CF8F89CC1B02D7E200F5D376 /* Armstrong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Armstrong.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +90,37 @@
 		CF8F89FC1B02D9BA00F5D376 /* DayOneTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayOneTableViewController.m; sourceTree = "<group>"; };
 		CF8F89FE1B02D9D400F5D376 /* DayOneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayOneTableViewCell.h; sourceTree = "<group>"; };
 		CF8F89FF1B02D9D400F5D376 /* DayOneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayOneTableViewCell.m; sourceTree = "<group>"; };
+		CF8F8A021B02DD5C00F5D376 /* DayTwoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayTwoTableViewController.h; sourceTree = "<group>"; };
+		CF8F8A031B02DD5C00F5D376 /* DayTwoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayTwoTableViewController.m; sourceTree = "<group>"; };
+		CF8F8A061B02DD7100F5D376 /* DayTwoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayTwoTableViewCell.h; sourceTree = "<group>"; };
+		CF8F8A071B02DD7100F5D376 /* DayTwoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayTwoTableViewCell.m; sourceTree = "<group>"; };
+		CF8F8A091B02E0BF00F5D376 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		CF8F8A0B1B02E0DA00F5D376 /* ArmstrongDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArmstrongDay.h; sourceTree = "<group>"; };
+		CF8F8A0C1B02E0DA00F5D376 /* ArmstrongDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArmstrongDay.m; sourceTree = "<group>"; };
+		CF8F8A0E1B02E1A200F5D376 /* ArmstrongDayWorkoutOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArmstrongDayWorkoutOne.h; sourceTree = "<group>"; };
+		CF8F8A0F1B02E1A200F5D376 /* ArmstrongDayWorkoutOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArmstrongDayWorkoutOne.m; sourceTree = "<group>"; };
+		CF8F8A6D1B02E7A200F5D376 /* NSCalendar+RSDFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+RSDFAdditions.h"; sourceTree = "<group>"; };
+		CF8F8A6E1B02E7A200F5D376 /* NSCalendar+RSDFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+RSDFAdditions.m"; sourceTree = "<group>"; };
+		CF8F8A6F1B02E7A200F5D376 /* RSDayFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDayFlow.h; sourceTree = "<group>"; };
+		CF8F8A701B02E7A200F5D376 /* RSDFDatePickerCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerCollectionView.h; sourceTree = "<group>"; };
+		CF8F8A711B02E7A200F5D376 /* RSDFDatePickerCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerCollectionView.m; sourceTree = "<group>"; };
+		CF8F8A721B02E7A200F5D376 /* RSDFDatePickerCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerCollectionViewLayout.h; sourceTree = "<group>"; };
+		CF8F8A731B02E7A200F5D376 /* RSDFDatePickerCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerCollectionViewLayout.m; sourceTree = "<group>"; };
+		CF8F8A741B02E7A200F5D376 /* RSDFDatePickerDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerDayCell.h; sourceTree = "<group>"; };
+		CF8F8A751B02E7A200F5D376 /* RSDFDatePickerDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerDayCell.m; sourceTree = "<group>"; };
+		CF8F8A761B02E7A200F5D376 /* RSDFDatePickerDaysOfWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerDaysOfWeekView.h; sourceTree = "<group>"; };
+		CF8F8A771B02E7A200F5D376 /* RSDFDatePickerDaysOfWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerDaysOfWeekView.m; sourceTree = "<group>"; };
+		CF8F8A781B02E7A200F5D376 /* RSDFDatePickerMonthHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerMonthHeader.h; sourceTree = "<group>"; };
+		CF8F8A791B02E7A200F5D376 /* RSDFDatePickerMonthHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerMonthHeader.m; sourceTree = "<group>"; };
+		CF8F8A7A1B02E7A200F5D376 /* RSDFDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerView.h; sourceTree = "<group>"; };
+		CF8F8A7B1B02E7A200F5D376 /* RSDFDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerView.m; sourceTree = "<group>"; };
+		CF8F8AD41B02E7E300F5D376 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Armstrong/ThirdParty/Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		CF8F8ADE1B02FF9800F5D376 /* ChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartViewController.h; sourceTree = "<group>"; };
+		CF8F8ADF1B02FF9800F5D376 /* ChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartViewController.m; sourceTree = "<group>"; };
+		CF8F8AE11B03000A00F5D376 /* LIneChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIneChartViewController.h; sourceTree = "<group>"; };
+		CF8F8AE21B03000A00F5D376 /* LIneChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIneChartViewController.m; sourceTree = "<group>"; };
+		CF8F8AF21B0305A600F5D376 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		CF8F8AF31B0305A600F5D376 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +144,7 @@
 		CF8F89C31B02D7E200F5D376 = {
 			isa = PBXGroup;
 			children = (
+				CF8F8AD41B02E7E300F5D376 /* Charts.xcodeproj */,
 				CF8F89CE1B02D7E200F5D376 /* Armstrong */,
 				CF8F89EB1B02D7E200F5D376 /* ArmstrongTests */,
 				CF8F89CD1B02D7E200F5D376 /* Products */,
@@ -87,6 +163,8 @@
 		CF8F89CE1B02D7E200F5D376 /* Armstrong */ = {
 			isa = PBXGroup;
 			children = (
+				CF8F8A111B02E7A200F5D376 /* ThirdParty */,
+				CF8F8A091B02E0BF00F5D376 /* README.txt */,
 				CF8F89D31B02D7E200F5D376 /* AppDelegate.h */,
 				CF8F89D41B02D7E200F5D376 /* AppDelegate.m */,
 				CF8F89DC1B02D7E200F5D376 /* Main.storyboard */,
@@ -96,6 +174,10 @@
 				CF8F89F81B02D8B900F5D376 /* DaysTableViewController.h */,
 				CF8F89F91B02D8B900F5D376 /* DaysTableViewController.m */,
 				CF8F8A011B02D9D800F5D376 /* Day One */,
+				CF8F8A051B02DD6000F5D376 /* Day Two */,
+				CF8F8AEA1B03019D00F5D376 /* Data */,
+				CF8F8AE91B03019700F5D376 /* Charts */,
+				CF8F8AF51B03080300F5D376 /* Calendar */,
 			);
 			path = Armstrong;
 			sourceTree = "<group>";
@@ -137,6 +219,86 @@
 			name = "Day One";
 			sourceTree = "<group>";
 		};
+		CF8F8A051B02DD6000F5D376 /* Day Two */ = {
+			isa = PBXGroup;
+			children = (
+				CF8F8A021B02DD5C00F5D376 /* DayTwoTableViewController.h */,
+				CF8F8A031B02DD5C00F5D376 /* DayTwoTableViewController.m */,
+				CF8F8A061B02DD7100F5D376 /* DayTwoTableViewCell.h */,
+				CF8F8A071B02DD7100F5D376 /* DayTwoTableViewCell.m */,
+			);
+			name = "Day Two";
+			sourceTree = "<group>";
+		};
+		CF8F8A111B02E7A200F5D376 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				CF8F8A6C1B02E7A200F5D376 /* RSDayFlow */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		CF8F8A6C1B02E7A200F5D376 /* RSDayFlow */ = {
+			isa = PBXGroup;
+			children = (
+				CF8F8A6D1B02E7A200F5D376 /* NSCalendar+RSDFAdditions.h */,
+				CF8F8A6E1B02E7A200F5D376 /* NSCalendar+RSDFAdditions.m */,
+				CF8F8A6F1B02E7A200F5D376 /* RSDayFlow.h */,
+				CF8F8A701B02E7A200F5D376 /* RSDFDatePickerCollectionView.h */,
+				CF8F8A711B02E7A200F5D376 /* RSDFDatePickerCollectionView.m */,
+				CF8F8A721B02E7A200F5D376 /* RSDFDatePickerCollectionViewLayout.h */,
+				CF8F8A731B02E7A200F5D376 /* RSDFDatePickerCollectionViewLayout.m */,
+				CF8F8A741B02E7A200F5D376 /* RSDFDatePickerDayCell.h */,
+				CF8F8A751B02E7A200F5D376 /* RSDFDatePickerDayCell.m */,
+				CF8F8A761B02E7A200F5D376 /* RSDFDatePickerDaysOfWeekView.h */,
+				CF8F8A771B02E7A200F5D376 /* RSDFDatePickerDaysOfWeekView.m */,
+				CF8F8A781B02E7A200F5D376 /* RSDFDatePickerMonthHeader.h */,
+				CF8F8A791B02E7A200F5D376 /* RSDFDatePickerMonthHeader.m */,
+				CF8F8A7A1B02E7A200F5D376 /* RSDFDatePickerView.h */,
+				CF8F8A7B1B02E7A200F5D376 /* RSDFDatePickerView.m */,
+			);
+			path = RSDayFlow;
+			sourceTree = "<group>";
+		};
+		CF8F8AD51B02E7E300F5D376 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF8F8AD91B02E7E300F5D376 /* Charts.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF8F8AE91B03019700F5D376 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				CF8F8ADE1B02FF9800F5D376 /* ChartViewController.h */,
+				CF8F8ADF1B02FF9800F5D376 /* ChartViewController.m */,
+				CF8F8AE11B03000A00F5D376 /* LIneChartViewController.h */,
+				CF8F8AE21B03000A00F5D376 /* LIneChartViewController.m */,
+			);
+			name = Charts;
+			sourceTree = "<group>";
+		};
+		CF8F8AEA1B03019D00F5D376 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CF8F8A0B1B02E0DA00F5D376 /* ArmstrongDay.h */,
+				CF8F8A0C1B02E0DA00F5D376 /* ArmstrongDay.m */,
+				CF8F8A0E1B02E1A200F5D376 /* ArmstrongDayWorkoutOne.h */,
+				CF8F8A0F1B02E1A200F5D376 /* ArmstrongDayWorkoutOne.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		CF8F8AF51B03080300F5D376 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				CF8F8AF21B0305A600F5D376 /* CalendarViewController.h */,
+				CF8F8AF31B0305A600F5D376 /* CalendarViewController.m */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,10 +309,12 @@
 				CF8F89C81B02D7E200F5D376 /* Sources */,
 				CF8F89C91B02D7E200F5D376 /* Frameworks */,
 				CF8F89CA1B02D7E200F5D376 /* Resources */,
+				CF8F8AE81B03014E00F5D376 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CF8F8AF01B03048A00F5D376 /* PBXTargetDependency */,
 			);
 			name = Armstrong;
 			productName = Armstrong;
@@ -204,6 +368,12 @@
 			mainGroup = CF8F89C31B02D7E200F5D376;
 			productRefGroup = CF8F89CD1B02D7E200F5D376 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CF8F8AD51B02E7E300F5D376 /* Products */;
+					ProjectRef = CF8F8AD41B02E7E300F5D376 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CF8F89CB1B02D7E200F5D376 /* Armstrong */,
@@ -212,6 +382,16 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		CF8F8AD91B02E7E300F5D376 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = CF8F8AD81B02E7E300F5D376 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		CF8F89CA1B02D7E200F5D376 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -219,6 +399,7 @@
 			files = (
 				CF8F89DE1B02D7E200F5D376 /* Main.storyboard in Resources */,
 				CF8F89E31B02D7E200F5D376 /* LaunchScreen.xib in Resources */,
+				CF8F8A0A1B02E0BF00F5D376 /* README.txt in Resources */,
 				CF8F89E01B02D7E200F5D376 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,11 +418,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8F8ACE1B02E7A200F5D376 /* RSDFDatePickerView.m in Sources */,
 				CF8F8A001B02D9D400F5D376 /* DayOneTableViewCell.m in Sources */,
+				CF8F8AC91B02E7A200F5D376 /* RSDFDatePickerCollectionView.m in Sources */,
+				CF8F8A041B02DD5C00F5D376 /* DayTwoTableViewController.m in Sources */,
 				CF8F89D51B02D7E200F5D376 /* AppDelegate.m in Sources */,
+				CF8F8AE31B03000A00F5D376 /* LIneChartViewController.m in Sources */,
+				CF8F8ACB1B02E7A200F5D376 /* RSDFDatePickerDayCell.m in Sources */,
+				CF8F8A101B02E1A200F5D376 /* ArmstrongDayWorkoutOne.m in Sources */,
 				CF8F89FD1B02D9BA00F5D376 /* DayOneTableViewController.m in Sources */,
+				CF8F8ACA1B02E7A200F5D376 /* RSDFDatePickerCollectionViewLayout.m in Sources */,
+				CF8F8ACD1B02E7A200F5D376 /* RSDFDatePickerMonthHeader.m in Sources */,
+				CF8F8A0D1B02E0DA00F5D376 /* ArmstrongDay.m in Sources */,
+				CF8F8AC81B02E7A200F5D376 /* NSCalendar+RSDFAdditions.m in Sources */,
 				CF8F89FA1B02D8B900F5D376 /* DaysTableViewController.m in Sources */,
 				CF8F89D21B02D7E200F5D376 /* main.m in Sources */,
+				CF8F8ACC1B02E7A200F5D376 /* RSDFDatePickerDaysOfWeekView.m in Sources */,
+				CF8F8AF41B0305A600F5D376 /* CalendarViewController.m in Sources */,
+				CF8F8A081B02DD7100F5D376 /* DayTwoTableViewCell.m in Sources */,
+				CF8F8AE01B02FF9800F5D376 /* ChartViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +455,11 @@
 			isa = PBXTargetDependency;
 			target = CF8F89CB1B02D7E200F5D376 /* Armstrong */;
 			targetProxy = CF8F89E91B02D7E200F5D376 /* PBXContainerItemProxy */;
+		};
+		CF8F8AF01B03048A00F5D376 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = CF8F8AEF1B03048A00F5D376 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -369,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Armstrong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -379,6 +580,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Armstrong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
